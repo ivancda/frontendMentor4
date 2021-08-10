@@ -1,0 +1,53 @@
+@media (min-width: 1300px){
+  .attribution{
+    background-color: hsl(185, 41%, 84%);;
+  }
+  .container{
+    height: 100vh;
+    justify-content: center;
+  }
+  .contAll{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .imgLogo{
+    margin-top: 0;
+    margin-bottom: 4em;
+  }
+  .tipGrid{
+    grid-template-columns: auto auto auto;
+  }
+  .bttn{
+    width: 5em;
+  }
+  .tipGrid input{
+    width: 5em;
+  }
+  .contSel{
+    width: 50%;
+  }
+  .contBill{
+    padding: 0;
+  }
+  .contBill{
+    padding: 1em;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .contRes{
+    width: 50%;
+    height: 370px;
+    margin: 1.5em;
+    padding: 1em;
+    padding-top: 1.5em;
+  }
+  .screen{
+    font-size: 2em;
+  }
+  .contRes button{
+    height: 2.5em;
+    margin-top: 6em;
+  }
+}

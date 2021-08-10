@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="resBtc-1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="media.css">
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><img src="images/logo.svg" alt="splitter logo" class="imgLogo"/></h1>
+      <div class="contAll">
+        <div class="contSel">
+          <div class="contBill">
+            <h3>Bill</h3>
+            <p id="err1">Can`t be zero</p> 
+            <div class="tpScreen">
+              <img src="images/icon-dollar.svg" alt="dollar icon" /><input type="number" name="bill" id="bill" placeholder="0"/>
+            </div>
+          </div>
+          <div class="contTip">
+            <h3>Select Tip %</h3>
+            <div class="tipGrid">
+              <button class="bttn" onclick="calculate(5)">5%</button>
+              <button class="bttn" onclick="calculate(10)">10%</button>
+              <button class="bttn" onclick="calculate(15)">15%</button>
+              <button class="bttn" onclick="calculate(25)">25%</button>
+              <button class="bttn" onclick="calculate(50)">50%</button>
+              <input type="number" id="cstm" onclick="calculateCustom()" placeholder="Custom"/>
+            </div>
+          </div>
+          <div class="contPpl">
+            <h3>Number of People</h3>
+            <p id="err2">Can`t be zero</p> 
+            <div class="tpScreen">
+              <img src="images/icon-person.svg" alt="person icon" /><input type="number" id="ppl" placeholder="0" />
+            </div>
+          </div>
+        </div>
+        <div class="contRes">
+          <div class="fResC">
+            <div class="tResC">
+              <span class="resT">Tip Amount</span>
+              <span class="resP">/ person</span>
+            </div>
+            <div class="screen" id="ppscreen" disabled>$0.00</div>
+          </div>
+          <div class="fResC">
+            <div class="tResC">
+              <span class="resT">Total</span>
+              <span class="resP">/ person</span>
+            </div>
+            <div class="screen" id="ttscreen" disabled>$0.00</div>
+          </div>
+          <button class="bttn" id="resBttn" onclick="resetF()">RESET</button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">Challenge by<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/ivancda">Ivan Coelho</a>.
+    </div>
+  </body>
+</html>

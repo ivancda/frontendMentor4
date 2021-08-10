@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 24px;
+}
+.resBtc-1 {
+  --res-bg-col: hsl(182, 50%, 31%);
+  --res-col: hsl(183, 40%, 28%);
+}
+.resBtc-2 {
+  --res-bg-col: hsl(172, 67%, 45%);
+  --res-col: hsl(183, 100%, 15%);
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.1s;
+}
+.container p {
+  color: brown;
+  float: inline-end;
+  text-align: end;
+  font-size: 0.6em;
+  margin-top: 15px;
+  display: none;
+}
+.imgLogo {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.container h3 {
+  font-size: 0.65em;
+  color: hsl(186, 14%, 43%);
+  display: inline;
+}
+.container h1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contAll {
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.contBill {
+  padding: 1.3em;
+  padding-bottom: 0;
+  padding-top: 1em;
+}
+.tpScreen {
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 2px;
+  height: 36px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 5px;
+}
+input[type="number"] {
+  width: 100%;
+  height: 100%;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  text-align: end;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  cursor: pointer;
+}
+input[type="number"]:focus-visible {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+.contTip {
+  padding: 1em;
+}
+.tipGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.6em;
+  margin-top: 12px;
+}
+.bttn {
+  height: 2.2em;
+  width: 6.5em;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 5px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tipGrid button:focus {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.tipGrid button:hover {
+  background-color: hsl(172, 77%, 71%);
+  color: hsl(183, 100%, 15%);
+}
+.tipGrid input {
+  height: 2.2em;
+  width: 6.5em;
+  position: static;
+  background-color: hsl(189, 41%, 97%);
+}
+.contPpl {
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.contRes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  padding: 0.5em;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  gap: 1em;
+  margin: 1em;
+}
+.contRes button {
+  background-color: var(--res-bg-col);
+  color: var(--res-col);
+  width: 90%;
+  height: 2.4em;
+  font-size: 0.8em;
+  font-weight: 900;
+}
+.contRes button:active {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(172, 67%, 45%);
+}
+.fResC {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.screen {
+  font-weight: 700;
+  font-size: 1.5em;
+  background: none;
+  color: hsl(172, 67%, 45%);
+}
+.tResC {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-weight: 700;
+}
+.resT {
+  font-size: 0.7em;
+  color: white;
+}
+.resP {
+  font-size: 0.6em;
+  color: hsl(185, 41%, 84%);
+}
+.attribution {
+  text-align: center;
+  background-color: white;
+  color: hsl(183, 100%, 15%);
+  font-size: 12px;
+}
+.attribution a {
+  color: hsl(183, 100%, 15%);
+  font-size: 1em;
+}
